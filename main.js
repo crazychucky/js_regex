@@ -13,20 +13,34 @@ function readFileToArr(fReadName,callback){
   });
 }
 
+var result = new Array()
+
 function cb(str){
   str = str.toString();
 
   var idx = str.search("include")
   if(idx > 0){
-    var ret = str.match(/"(.+?)"/g);
-    console.log(ret[0]);
-    console.log(str);
+    // let ret = str.match(/"(.+?)"/g);
+    let ret = str.match(/"(.+?)"/);
+    console.log(ret)
+    ret.forEach(function(item,index,arr){
+      result.push(item)
+      // console.log(item)
+    })
   }
   // if(null!= ret){
   //   console.log(ret);
   // }
 }
 
+function output(){
+  result.forEach(function(item,index,arr){
+    console.log(item)
+  })
+}
+
 var file = "./input/sample.cpp"
 
 readFileToArr(file,cb)
+
+output()
