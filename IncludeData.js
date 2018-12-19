@@ -16,13 +16,12 @@ class IncludeData {
   }
 
   output(){
-    let len = this._list
+    let len = this._list.length
     for (let i = 0; i < len; i++){
       console.log(this._list[i])
     }
   }
 }
-
 
 // exports = { IncludeData:IncludeData }
 module.exports = IncludeData
