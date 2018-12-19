@@ -1,8 +1,9 @@
-import { IncludeData } from "./IncludeData"
 // import D as D from "./IncludeData"
-/*
 var fs = require('fs');
 var readline = require('readline');
+
+var IncludeData = require("./IncludeData")
+console.log(IncludeData)
 
 
 
@@ -54,4 +55,3 @@ readFileToArr(file,cb)
 includeData.output()
 
 // output()
-*/

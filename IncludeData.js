@@ -1,5 +1,4 @@
 //定义类
-/*
 class IncludeData {
   constructor() {
     this._list = new Array
@@ -18,15 +17,12 @@ class IncludeData {
 
   output(){
     let len = this._list
-    for (i = 0; i < len; i++){
+    for (let i = 0; i < len; i++){
       console.log(this._list[i])
     }
   }
 }
 
-export { IncludeData }
-*/
 
-
-const D = 123
-export { D }
+// exports = { IncludeData:IncludeData }
+module.exports = IncludeData
